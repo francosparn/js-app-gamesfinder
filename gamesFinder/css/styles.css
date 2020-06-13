@@ -1,0 +1,96 @@
+* {
+    font-family: 'Century Gothic';
+}
+
+.searcher {
+    font-size: 15px;
+    background-color: rgba(238, 238, 238, 0.794);
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(92, 92, 92, 1);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(92, 92, 92, 1);
+    box-shadow: 2px 1px 5px 0px rgba(92, 92, 92, 1);
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form select {
+    font-size: 15px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.images {
+    height: 300px;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.platform,
+.language {
+    margin-left: 5px;
+}
+
+.oldprice {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.price {
+    color: #39a165;
+    font-size: 25px;
+}
+
+.release,
+.gender {
+    font-size: 13px;
+}
+
+.cards {
+    background-color: #f1f1f1;
+}
+
+.buy {
+    width: 22px;
+    height: 22px;
+}
+
+.button-img {
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+.alert-message {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #d6360e;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 61px;
+    background-color: rgb(255, 100, 100);
+}
+
+.footer {
+    bottom: 0;
+    position: static;
+    margin-top: 30px;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    border-top: 3px solid rgb(29, 197, 183);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+    .alert-message {
+        margin: 10px;
+        text-align: center;
+    }
+}

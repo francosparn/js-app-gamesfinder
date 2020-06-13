@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamesFinder</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="d-inline-block align-top" alt=""> games<span class="title">Finder</span>
+        </a>
+    </nav>
+
+    <!-- Main Container -->
+    <h2 class="text-center mt-4 mb-4">Busqueda de Juegos</h2>
+    <div class="container">
+        <div class="searcher p-3">
+            <form action="#" id="form" class="form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="gender">Género</label>
+                            <select class="form-control" id="gender">
+                            <option selected value="">Seleccione género</option>
+                            <option value="Acción">Acción</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Baile">Baile</option>
+                            <option value="Battle Royale">Battle Royale</option>
+                            <option value="Carreras">Carreras</option>
+                            <option value="Deportes">Deportes</option>
+                            <option value="Lucha">Lucha</option>
+                            <option value="Shooter">Shooter</option>                            
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="release">Año de lanzamiento</label>
+                            <select class="form-control" id="release">
+                                <option value="">Seleccione año</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="platform">Plataforma</label>
+                            <select class="form-control" id="platform">
+                                <option selected value="">Seleccione plataforma</option>
+                                <option value="PC">PC</option>
+                                <option value="PS4">PS4</option>
+                                <option value="XBOX">XBOX</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="minPrice">Precio Mínimo</label>
+                            <select class="form-control" id="minPrice">
+                                <option selected value="">Seleccione precio mínimo</option>
+                                <option value="100">$100</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1000</option>
+                                <option value="1500">$1500</option>
+                                <option value="2000">$2000</option>
+                                <option value="2500">$2500</option>
+                                <option value="3000">$3000</option>
+                                <option value="3500">$3500</option>
+                                <option value="4000">$4000</option>
+                                <option value="4500">$4500</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="maxPrice">Precio Máximo</label>
+                            <select class="form-control" id="maxPrice">
+                                <option selected value="">Seleccione precio máximo</option>
+                                <option value="100">$100</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1000</option>
+                                <option value="1500">$1500</option>
+                                <option value="2000">$2000</option>
+                                <option value="2500">$2500</option>
+                                <option value="3000">$3000</option>
+                                <option value="3500">$3500</option>
+                                <option value="4000">$4000</option>
+                                <option value="4500">$4500</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="language">Idioma</label>
+                            <select class="form-control" id="language">
+                                <option selected value="">Seleccione idioma</option>
+                                <option value="Español">Español</option>
+                                <option value="Inglés">Inglés</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <h2 class="text-center mt-4 mb-4">Lista de Videojuegos</h2>
+
+        <!-- Result -->
+        <div class="row" id="result"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">Developed by Franco Sparn &copy 2020</footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</body>
+
+</html>
